@@ -1,17 +1,12 @@
 public class QuadraticReciprocity{
   public static void main(String[] args){
-      System.out.print(legendre(643,1003));
-  }
-
-  public static boolean isQr(int p, int q){
-    if (legendre(p,q)==1){
-      return true;
-    } else {
-      return false;
-    }
+      System.out.print(legendre(13,3));
   }
 
   public static int legendre(int p, int q){
+    if (p%q==0){
+      return 0;
+    }
     if (p==1){
       return 1;
     }
